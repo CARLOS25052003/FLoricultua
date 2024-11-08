@@ -164,7 +164,7 @@ nav {
   background: linear-gradient(to right,
   rgba(255, 182, 193, 0.6),
   rgba(173, 261, 230, 0.6));
-  width: 50%;                  /* Define a largura para 80% da largura da tela */
+  width: 30%;                  /* Define a largura para 80% da largura da tela */
   max-width: 1200px;           /* Define um tamanho máximo (opcional) */
 }
 .apresentacao__subtitulos__titulo{
@@ -248,16 +248,19 @@ nav {
   border-radius: 5px;
 }
 .botao-link {
-  background-color: #4CAF50;
-  color: white;
-  padding: 10px 20px;
+  background-color: rgba(255, 182, 193, 0.8);
+  color: #555555;
+  padding: 12px 24px;
   border: none;
-  border-radius: 5px;
+  border-radius: 8px;
   cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+
 }
 
 .botao-link:hover {
-  background-color: #45a049;
+  background-color: rgba(173, 261, 230, 0.8); /* Muda a cor no hover para um tom mais claro */
+  transform: scale(1.05);
 }
 .apresentacao__subtitulos {
   font-family: "Dancing Script", cursive;
@@ -270,4 +273,72 @@ nav {
     color: #555;
 
   }
+}
+.cuidados {
+  background-color: rgba(255, 182, 193, 0.6); /* Cor suave, para combinar com o estilo anterior */
+  border-radius: 12px; /* Bordas arredondadas */
+  padding: 20px; /* Espaçamento interno */
+  max-width: 800px; /* Limita a largura do conteúdo */
+  margin: 40px auto; /* Centraliza o conteúdo na página */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Sombra suave para dar profundidade */
+}
+
+.apresentacao__subtitulos {
+  font-size: 2em;
+  font-family: "Dancing Script", cursive; /* Estilo de fonte suave e elegante */
+  color: #333;
+  margin-bottom: 10px; /* Espaçamento abaixo do título */
+  text-align: center; /* Centraliza o título */
+}
+
+.apresentacao__subtitulo__texto {
+  font-size: 1.2em;
+  color: #555; /* Cor de texto suave e discreta */
+  line-height: 1.6; /* Aumenta o espaçamento entre as linhas para melhorar a leitura */
+  text-align: justify; /* Justifica o texto para um alinhamento mais limpo */
+  font-family: Arial, sans-serif; /* Fonte simples e legível */
+}
+.locais {
+  background-color: rgba(173, 261, 230, 0.6); /* Cor suave, similar ao estilo anterior */
+  border-radius: 12px; /* Bordas arredondadas para suavizar o visual */
+  padding: 20px; /* Espaçamento interno para que o conteúdo não fique colado nas bordas */
+  max-width: 800px; /* Limita a largura do conteúdo */
+  margin: 40px auto; /* Centraliza o conteúdo com uma margem superior e inferior */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Sombra suave para dar profundidade */
+}
+
+.apresentacao__subtitulos {
+  font-size: 2em;
+  font-family: "Dancing Script", cursive; /* Fonte cursiva para um visual elegante */
+  color: #333; /* Cor escura para o título */
+  margin-bottom: 10px; /* Espaçamento abaixo do título */
+  text-align: center; /* Centraliza o título */
+}
+
+.apresentacao__subtitulo__texto {
+  font-size: 1.2em; /* Tamanho de fonte para o texto introdutório */
+  color: #555; /* Cor suave para o texto */
+  line-height: 1.6; /* Aumenta o espaçamento entre as linhas para melhorar a legibilidade */
+  text-align: center; /* Centraliza o texto */
+  font-family: Arial, sans-serif; /* Fonte simples e legível */
+  margin-bottom: 20px; /* Espaçamento abaixo do parágrafo */
+}
+
+.apresentacao__locais {
+  list-style-type: none; /* Remove os marcadores padrão da lista */
+  padding: 0; /* Remove o padding da lista */
+  margin: 0; /* Remove a margem da lista */
+}
+
+.endereçõs {
+  font-size: 1.2em; /* Tamanho de fonte para os itens da lista */
+  color: #444; /* Cor suave para o texto dos locais */
+  padding: 8px 0; /* Espaçamento entre os itens */
+  text-align: center; /* Alinha o texto ao centro */
+  font-family: "Arial", sans-serif; /* Fonte simples e legível */
+  border-bottom: 1px solid #ddd; /* Linha divisória entre os itens */
+}
+
+.endereçõs:last-child {
+  border-bottom: none; /* Remove a linha divisória do último item */
 }
