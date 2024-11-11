@@ -342,3 +342,52 @@ nav {
 .endereçõs:last-child {
   border-bottom: none; /* Remove a linha divisória do último item */
 }
+.footer {
+  background-color: #f5f5f5; /* Cor de fundo suave */
+  padding: 20px 0;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+.footer__info {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.footer__links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 10px;
+}
+
+.footer__link {
+  color: #555;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 0.9em;
+  transition: color 0.3s ease;
+}
+
+.footer__link:hover {
+  color: #ff6f61; /* Cor de destaque ao passar o mouse */
+}
+
+.footer__company,
+.footer__address,
+.footer__contact,
+.footer__whatsapp {
+  font-size: 0.9em;
+  margin: 5px 0;
+}
+
+.footer__contact a {
+  color: #555;
+  text-decoration: none;
+}
+
+.footer__contact a:hover {
+  color: #ff6f61; /* Cor de destaque ao passar o mouse */
+}
