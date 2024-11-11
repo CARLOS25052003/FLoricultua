@@ -16,13 +16,15 @@
 }
 
 body {
-  background-color: var(--bg-color);
   width: 100%;
+  background-size: cover;
+  flex-direction: column;
+  min-height: 100%;
+  margin: 0;
 }
 
 /* Cabeçalho */
 .cabeçalho {
-  border: 6px solid #333;
   background: linear-gradient(to right,
   rgba(144, 224, 239, 0.8), /* Azul claro */
   rgba(176, 224, 230, 0.8), /* Azul pastel */
@@ -39,7 +41,6 @@ body {
   display: flex;
   align-items: center;
   width: 100%;
-  gap: 20px;
 }
 
 .cabeçalho h1 {

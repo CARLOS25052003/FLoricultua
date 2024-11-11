@@ -71,3 +71,42 @@ nav {
   color: #333;
   border-color: #555;
 }
+/* Estilo básico para a FAQ */
+.faq {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+}
+
+.accordion {
+  width: 100%;
+}
+
+.accordion__item {
+  background-color: #f5f5f5;
+  border: 1px solid #ddd;
+  padding: 15px;
+  width: 100%;
+  text-align: left;
+  font-size: 1.1em;
+  cursor: pointer;
+  margin-bottom: 10px;
+  transition: background-color 0.3s;
+}
+
+.accordion__item:hover {
+  background-color: #ff6f61;
+  color: #fff;
+}
+
+.accordion__content {
+  display: none;
+  padding: 15px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  margin-bottom: 10px;
+}
+
+.accordion__content p {
+  margin: 0;
+  font-size: 1em;
+}
