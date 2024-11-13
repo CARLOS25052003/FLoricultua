@@ -40,7 +40,6 @@ main {
   justify-content: space-between;
   align-items: center;
   gap: 20px;
-  height: 66px;
 }
 
 .cabeçalho__butoes {
@@ -48,7 +47,7 @@ main {
   align-items: center;
   width: 100%;
   gap: 20px;
-  height: 46px;
+  height: 40px;
 }
 
 .cabeçalho h1 {
@@ -65,38 +64,42 @@ main {
 .cabeçalho h1 img {
   margin-right: 10px;
   height: 40px;
-align-items: center;
 }
 
 /* Navegação */
 nav {
   display: flex;
-  gap: 40px;
+  gap: 20px;
 }
 
 .butoes {
   display: flex;
   align-items: center;
-  padding: 8px 12px;
-  border: 2px solid #555;
-  border-radius: 5px;
+  padding: 6px 14px;
+  border-radius: 8px;
   user-select: none;
   text-decoration: none;
   color: #555;
   font-size: 1.1em;
+  font-weight: 500;
+  background-color: rgba(144, 224, 239, 0.2);
   transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
 }
 
 .butoes img {
-  margin-right: 20px;
+  margin-right: 8px;
   height: 20px;
   width: auto;
 }
 
 .butoes:hover {
-  background-color: rgba(255, 192, 203, 0.2); /* Rosa claro */
-  color: #333;
-  border-color: #555;
+  background-color: rgba(255, 192, 203, 0.4); /* Rosa claro */
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-decoration: none;
+}
+.butoes:active {
+  transform: scale(0.98);
 }
 
 /* Estilo básico para a FAQ */
