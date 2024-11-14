@@ -95,6 +95,42 @@ nav {
 .butoes:active {
   transform: scale(0.98);
 }
+.cabeçalho__extras {
+  display: flex;
+  align-items: center;
+}
+
+.cabeçalho__extras__item {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  margin-left: 20px;
+  color: #333;
+  padding: 6px 14px;
+  border-radius: 8px;
+  background-color: rgba(255, 192, 203, 0.4); /* Rosa claro */
+  font-size: 1.1em;
+  font-weight: 500;
+  user-select: none;
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cabeçalho__extras__item img {
+  width: 20px;
+  margin-right: 8px;
+}
+
+.cabeçalho__extras__item:hover {
+  background-color: rgba(144, 224, 239, 0.2);
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.cabeçalho__extras__item:active {
+  transform: scale(0.98);
+}
+
+
 /* Seção de Apresentação */
 .apresentacao {
   background-image: url("../img/6197867.png") ;

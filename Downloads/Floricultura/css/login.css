@@ -74,7 +74,7 @@ nav {
   color: #555;
   font-size: 1.1em;
   font-weight: 500;
-  background-color: rgba(144, 244, 239, 0.2);
+  background-color: rgba(144, 224, 239, 0.2);
   transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
 }
 
@@ -89,6 +89,7 @@ nav {
   transform: scale(1.05);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
+
 .butoes:active {
   transform: scale(0.98);
 }
@@ -126,106 +127,125 @@ nav {
 .cabeçalho__extras__item:active {
   transform: scale(0.98);
 }
-.sobre {
-  font-family: Arial, sans-serif;
+/* Estilo para o main */
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(120deg, rgba(173, 216, 230, 0.5), rgba(255, 182, 193, 0.5), rgba(144, 238, 144, 0.5));
+  background-size: cover;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+/* Container que envolve a área de login */
+.login-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1200px;
+  box-sizing: border-box;
+}
+
+/* Lado esquerdo com logo e imagem */
+.login-left {
+  flex: 1;
+  padding-right: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-left h1 {
+  font-size: 3rem;
   color: #333;
-  line-height: 1.6;
-  padding: 20px;
-}
-
-.sobre h1 {
-  font-size: 2em;
-  text-align: center;
   margin-bottom: 20px;
-  color: #4caf50; /* Cor verde para destaque */
 }
 
-.sobre__conteudo {
-  max-width: 900px;
-  margin: 0 auto;
-  padding: 0 15px;
+.login-left p {
+  font-size: 1.2rem;
+  color: #555;
+  text-align: center;
+  margin-bottom: 40px;
 }
 
-.sobre__conteudo p {
-  font-size: 1.1em;
+.login-image {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Lado direito com o formulário */
+.login-right {
+  flex: 1;
+  padding-left: 30px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+}
+
+.login-right h2 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.form-group {
   margin-bottom: 15px;
 }
 
-.sobre__conteudo h2 {
-  font-size: 1.5em;
-  margin-top: 30px;
-  color: #4caf50; /* Cor verde para subtítulos */
-}
-
-.sobre__conteudo ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-.sobre__conteudo ul li {
-  font-size: 1.1em;
-  margin-bottom: 10px;
-}
-
-.sobre__conteudo strong {
-  color: #4caf50; /* Destaque verde para termos importantes */
-}
-
-.sobre__conteudo a {
-  color: #4caf50;
-  text-decoration: none;
-}
-
-.sobre__conteudo a:hover {
-  text-decoration: underline;
-}
-
-.footer {
-  background-color: #f5f5f5; /* Cor de fundo suave */
-  padding: 20px 0;
-  text-align: center;
-  font-family: Arial, sans-serif;
-  color: #333;
-}
-
-.footer__info {
-  max-width: 800px;
-  margin: 0 auto;
-}
-
-.footer__links {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 15px;
-  margin-bottom: 10px;
-}
-
-.footer__link {
+.form-group label {
+  font-size: 1rem;
   color: #555;
-  text-decoration: none;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
+  margin-top: 5px;
+}
+
+.login-btn {
+  width: 100%;
+  padding: 12px;
+  background-color: #ff6f61;
+  color: white;
+  font-size: 1.2rem;
   font-weight: bold;
-  font-size: 0.9em;
-  transition: color 0.3s ease;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
 }
 
-.footer__link:hover {
-  color: #ff6f61; /* Cor de destaque ao passar o mouse */
+.login-btn:hover {
+  background-color: #e65a4c;
 }
 
-.footer__company,
-.footer__address,
-.footer__contact,
-.footer__whatsapp {
-  font-size: 0.9em;
-  margin: 5px 0;
+.signup-link {
+  text-align: center;
+  margin-top: 20px;
 }
 
-.footer__contact a {
+.signup-link p {
+  font-size: 1rem;
   color: #555;
+}
+
+.signup-link a {
+  color: #ff6f61;
+  font-weight: bold;
   text-decoration: none;
 }
 
-.footer__contact a:hover {
-  color: #ff6f61; /* Cor de destaque ao passar o mouse */
+.signup-link a:hover {
+  text-decoration: underline;
 }

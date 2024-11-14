@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Florishop </title>
+  <link rel="icon" href="../img/plant.svg">
+  <link rel="stylesheet" href="../css/login.css">
+</head>
+
+<body>
+<header class="cabeçalho">
+  <h1><img src="../img/logo.svg" alt="logo">Florishop</h1>
+  <section class="cabeçalho__butoes">
+    <a class="butoes" href="../html/home.html"><img src="../img/home.svg" alt="Home">Home</a>
+    <a class="butoes" href="../html/lojinha.html"><img src="../img/loja.svg" alt="Lojinha">Lojinha</a>
+    <a class="butoes" href="../html/biografia.html"><img src="../img/create.svg" alt="Biografia">Biografia</a>
+    <a class="butoes" href="../html/termos.html"><img src="../img/contact.svg" alt="Termos">Termos</a>
+  </section>
+  <section class="cabeçalho__extras">
+    <a href="../html/carrinho.html" class="cabeçalho__extras__item">
+      <img src="../img/cart.png" alt="Carrinho">
+      <span>Carrinho</span>
+    </a>
+    <a href="../html/login.html" class="cabeçalho__extras__item">
+      <img src="../img/login.png" alt="Login">
+      <span>Login</span>
+    </a>
+  </section>
+</header>
+<main>
+  <div class="container-fluid d-flex justify-content-center align-items-center min-vh-100 p-0" style="background: linear-gradient(120deg, rgba(173, 216, 230, 0.5), rgba(255, 182, 193, 0.5), rgba(144, 238, 144, 0.5));">
+    <div class="row w-100">
+      <!-- Lado esquerdo (Logo e imagem) -->
+      <div class="col-md-6 d-flex flex-column justify-content-center align-items-center text-center p-4">
+        <h1 class="display-3 font-weight-bold text-dark">Florishop</h1>
+        <p class="lead text-dark">Bem-vindo à nossa loja de flores! Faça login para continuar suas compras.</p>
+        <img src="../img/rosasbrancas.png" alt="Imagem de flores" class="img-fluid rounded shadow-lg" style="max-width: 90%; max-height: 400px;">
+      </div>
+
+      <!-- Lado direito (Formulário de login) -->
+      <div class="col-md-6 bg-white rounded p-4 shadow-lg">
+        <h2 class="text-center text-dark mb-4">Login</h2>
+        <form action="login_action" method="post">
+          <div class="form-group">
+            <label for="username" class="font-weight-bold">Usuário</label>
+            <input type="text" id="username" name="username" class="form-control" required>
+          </div>
+          <div class="form-group">
+            <label for="password" class="font-weight-bold">Senha</label>
+            <input type="password" id="password" name="password" class="form-control" required>
+          </div>
+          <button type="submit" class="btn btn-danger btn-block mt-4">Entrar</button>
+        </form>
+        <div class="text-center mt-3">
+          <p class="mb-0">Não tem uma conta? <a href="../html/registro.html" class="text-danger font-weight-bold">Registre-se aqui</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+<footer></footer>
+<script src="../javas/login.js"></script>
+</body>
+</html>
