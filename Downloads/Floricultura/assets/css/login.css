@@ -88,6 +88,8 @@ nav {
   background-color: rgba(255, 192, 203, 0.4); /* Rosa claro */
   transform: scale(1.05);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-decoration: none;
+  color: #555;
 }
 
 .butoes:active {
@@ -127,125 +129,133 @@ nav {
 .cabeçalho__extras__item:active {
   transform: scale(0.98);
 }
-/* Estilo para o main */
-main {
+.main-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  min-height: 100vh;
+  padding: 0;
   background: linear-gradient(120deg, rgba(173, 216, 230, 0.5), rgba(255, 182, 193, 0.5), rgba(144, 238, 144, 0.5));
-  background-size: cover;
-  padding: 0 20px;
-  box-sizing: border-box;
 }
 
-/* Container que envolve a área de login */
-.login-container {
+.main-content {
   display: flex;
-  justify-content: space-between;
-  width: 100%;
-  max-width: 1200px;
-  box-sizing: border-box;
+  width: 80%;
 }
 
-/* Lado esquerdo com logo e imagem */
-.login-left {
+.main-content .left-section {
   flex: 1;
-  padding-right: 30px;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-}
-
-.login-left h1 {
-  font-size: 3rem;
-  color: #333;
-  margin-bottom: 20px;
-}
-
-.login-left p {
-  font-size: 1.2rem;
-  color: #555;
   text-align: center;
-  margin-bottom: 40px;
 }
 
-.login-image {
-  width: 100%;
-  max-width: 400px;
-  height: auto;
-  border-radius: 8px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-}
-
-/* Lado direito com o formulário */
-.login-right {
+.main-content .right-section {
   flex: 1;
-  padding-left: 30px;
-  background-color: rgba(255, 255, 255, 0.8);
-  border-radius: 10px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-  padding: 30px;
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.login-right h2 {
-  font-size: 2rem;
-  color: #333;
+.main-content h2 {
+  text-align: center;
   margin-bottom: 20px;
 }
 
 .form-group {
-  margin-bottom: 15px;
+  margin-bottom: 1rem;
 }
 
-.form-group label {
-  font-size: 1rem;
-  color: #555;
-}
-
-.form-group input {
+input[type="text"],
+input[type="email"],
+input[type="password"] {
   width: 100%;
   padding: 10px;
   border: 1px solid #ddd;
   border-radius: 5px;
-  font-size: 1rem;
-  margin-top: 5px;
 }
 
-.login-btn {
+button[type="submit"] {
   width: 100%;
-  padding: 12px;
-  background-color: #ff6f61;
+  padding: 10px;
+  background-color: #f06292;
   color: white;
-  font-size: 1.2rem;
-  font-weight: bold;
   border: none;
   border-radius: 5px;
+  font-size: 16px;
   cursor: pointer;
-  transition: background-color 0.3s;
 }
 
-.login-btn:hover {
-  background-color: #e65a4c;
+button[type="submit"]:hover {
+  background-color: #ec407a;
 }
 
-.signup-link {
-  text-align: center;
-  margin-top: 20px;
+.text-center p {
+  margin-top: 15px;
 }
 
-.signup-link p {
-  font-size: 1rem;
-  color: #555;
-}
-
-.signup-link a {
-  color: #ff6f61;
+.text-center a {
+  color: #f06292;
   font-weight: bold;
+}
+.footer {
+  background-color: #f5f5f5; /* Cor de fundo suave */
+  padding: 20px 0;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+.footer__info {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.footer__links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 10px;
+}
+
+.footer__link {
+  color: #555;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 0.9em;
+  transition: color 0.3s ease;
+}
+
+.footer__link:hover {
+  color: #ff6f61; /* Cor de destaque ao passar o mouse */
   text-decoration: none;
 }
 
-.signup-link a:hover {
-  text-decoration: underline;
+.footer__company,
+.footer__address,
+.footer__contact,
+.footer__whatsapp {
+  font-size: 0.9em;
+  margin: 5px 0;
+}
+
+.footer__contact a {
+  color: #555;
+  text-decoration: none;
+}
+
+.footer__contact a:hover {
+  color: #ff6f61; /* Cor de destaque ao passar o mouse */
+}
+.custom-alert {
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.custom-alert.hide {
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
 }
